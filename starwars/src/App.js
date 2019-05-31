@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharCards';
+import HomeWorld from './components/HomeWorld';
 
 class App extends Component {
   constructor() {
@@ -33,6 +35,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharList charData={this.state.starwarsChars}/>
+        {/* <HomeWorld world={this.state.starwarsChars}/> */}
       </div>
     );
   }
